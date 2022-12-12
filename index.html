@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissor</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+
+<main>
+
+<section class="container">
+    
+    <section class="container-header">
+<h2>Rock Paper Scissor</h2>
+    </section>
+
+    <section class="user-container">
+        <div class="headings">
+<h3>You</span></h3>
+<h3 id="youChoose">Choice</h3>
+</div>
+<!-- user turn -->
+
+<section class="userPlay">
+    
+       <!-- rock -->
+       <i class="fa-solid fa-hand-back-fist" title="rock" onclick="userSelect('rock')"  id="userRock"></i>        
+       <!-- paper -->
+       <i class="fa-solid fa-toilet-paper" title="paper" onclick="userSelect('paper')"  id="userPaper"></i>        
+       <!-- scissor -->
+       <i class="fa-solid fa-scissors" title="scissor" onclick="userSelect('scissor')" id="userScissor"></i>
+    </section>
+<!-- <section class="scores">
+<h1><span>Rock</span> -3</h1>
+<h1><span>Paper</span> -2</h1>
+<h1><span>Scissor</span> -1</h1>
+</section> -->
+
+
+<!-- computer turn -->
+
+    <section class="computer-container">
+     <div class="headings">
+        <h3>Computer</h3>
+        <h3 id="computerChoose">Choice</h3>
+        </div>
+        <section class="computerPlay">
+            
+            <!-- rock -->
+            <i class="fa-solid fa-hand-back-fist" title="rock"  id="compRock"></i>        
+            <!-- paper -->
+            <i class="fa-solid fa-toilet-paper" title="paper"   id="compPaper"></i>        
+            <!-- scissor -->
+            <i class="fa-solid fa-scissors"  title="scissor"  id="compScissor"></i>
+                </section>
+        
+    <!-- reset -->
+    <i class="fa-solid fa-recycle" id="reset" onclick="refresh()"></i>            
+</section>
+
+ <h2 id="result"></h2>
+
+
+
+
+
+</section>
+
+
+
+</main>
+
+    
+</body>
+</html>
